@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.wrap {
+    background-color: #fafafa;
+    transition: transform .5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    transform-origin: top left;
+}
+
+.wrap-nav {
+    transform: rotate(-20deg);
+}
+
+.circle {
+    position: fixed;
+    top: -130px;
+    left: -140px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(212, 61, 61);
+    position: relative;
+    transition: transform .5s linear;
+}
+
+.open-btn{
+    transform: rotate(-90deg);
+}
+
+.open {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+.close {
+    position: absolute;
+    top: 55%;
+    right: 65%;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    transform: rotate(20deg);
+}
+
+.container {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article-heading {
+    height: 600px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 2.5s;
+}
+
+.article-heading-show {
+    opacity: 1;
+}
+
+.article-heading p, .article-body p{
+    font-size: 18px;
+    letter-spacing: .1em;
+    line-height: 1.5;
+}
+
+.article-heading .scrolldown {
+    margin-left: 500px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.scrolldown:hover {
+    transform: scale(1.5);
+}
+
+.article-body {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.dogimg {
+    width: 800px;
+    margin-bottom: 30px;
+    transform: translateX(400%);
+    transition: transform 2.5s ease;
+}
+
+.show {
+    transform: translateX(0%);
+}
+
+.navbar {
+    margin-left: 50px;
+    position: fixed;
+    bottom: 50%;
+    transform: translateX(-400%);
+    transition: transform 1s ease;
+}
+
+.navbar-show {
+    transform: translateX(0);
+}
+
+.navbar ul {
+    list-style-type: none;
+    font-family: 'Poppins';
+}
+
+.navbar li {
+    padding: 20px;
+    color: #fff;
+    font-size: 30px;
+}
