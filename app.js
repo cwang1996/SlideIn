@@ -21,7 +21,7 @@ function writeText(){
 }
 
 function slideIn(){
-    const triggerBottom = (window.innerHeight / 4) * 3.6;
+    const triggerBottom = (window.innerHeight / 4) * 3.4;
     const triggerTop = dogs.getBoundingClientRect().top;
     console.log(triggerBottom);
     console.log(triggerTop);
